@@ -1,0 +1,40 @@
+Time and Space Complexity of Algorithms:
+When analyzing algorithms, understanding their efficiency in terms of time and space is crucial. This is typically expressed using the concepts of Big-O, Big-Θ (Theta), and Big-Ω (Omega) notations, which describe the asymptotic behavior of algorithms.
+
+1. Asymptotic Complexity
+Asymptotic complexity refers to the behavior of an algorithm as the input size grows towards infinity. It helps to evaluate an algorithm's performance without focusing on constant factors or lower-order terms.
+
+Big-O Notation (O):
+
+Represents the upper bound of an algorithm's running time.
+Describes the worst-case scenario.
+For example, if an algorithm runs in O(n²), it means the time it takes grows at most proportional to the square of the input size n.
+Big-Ω Notation (Ω):
+
+Represents the lower bound of an algorithm's running time.
+Describes the best-case scenario.
+For example, if an algorithm runs in Ω(n), it means the time it takes grows at least linearly with the input size n.
+Big-Θ Notation (Θ):
+
+Represents a tight bound on an algorithm's running time.
+Indicates that an algorithm's running time grows at the same rate in both the worst-case and best-case scenarios.
+For example, if an algorithm runs in Θ(n log n), it means that the running time grows exactly at that rate for large n.
+
+2. Upper and Lower Bound
+Upper Bound:
+Provides a limit on the maximum running time or space usage of an algorithm, ensuring that it will not exceed a specified threshold. For instance, O(n³) indicates that the algorithm will not take more than that time for any input size.
+
+Lower Bound:
+Provides a guarantee on the minimum running time or space usage of an algorithm. For instance, Ω(n) implies that the algorithm will take at least linear time for some input sizes.
+
+3. Time and Space Trade-offs
+Time and space trade-offs refer to the relationship between the time complexity and space complexity of an algorithm. Optimizing one often comes at the expense of the other:
+
+Time Complexity: Refers to the amount of computational time required by an algorithm to complete.
+Space Complexity: Refers to the amount of memory required by an algorithm to execute.
+Examples:
+
+Using additional memory (e.g., with hash tables) can speed up operations (lower time complexity) but increases space complexity.
+Optimizing for lower memory usage (e.g., using in-place algorithms) may increase the time taken for execution (higher time complexity).
+Summary
+Understanding time and space complexity through asymptotic notation (Big-O, Big-Ω, and Big-Θ) is essential for evaluating algorithm performance. Recognizing the trade-offs between time and space helps in choosing the right algorithm based on the specific requirements and constraints of a problem.
