@@ -2,7 +2,7 @@
 int front = -1, rear = -1;
 int Queue[5];
 
-void pop(){
+void Dequeue(){
 if(front == -1){
     printf("Stack Underflow\n");
     return;
@@ -16,7 +16,7 @@ if(front == rear){
 }
 }
 
-void push(int x){
+void Enqueue(int x){
 if((rear+1)%5==front){
     printf("Stack Overflow\n");
 }else if(front == -1 && rear == -1){
@@ -57,12 +57,12 @@ int main(){
         scanf("%d", &choice);
         switch(choice){
             case 1:
-                pop();
+                Dequeue();
                 break;
             case 2:
                 printf("Enter element to push\n");
                 scanf("%d", &x);
-                push(x);
+                Enqueue(x);
                 break;
             case 3:
                 peek();
