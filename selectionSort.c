@@ -9,12 +9,11 @@ int main(){
                 k = j;
             }
         }
-        if(k == i){
-            break;
-        }
+        if(k != i){
         int temp = arr[k];
         arr[k] = arr[i];
         arr[i] = temp;
+    }
     }
     for (int i = 0; i < 6;i++){
         printf("%d\t", arr[i]);
